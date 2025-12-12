@@ -1,0 +1,84 @@
+{
+  "runs": [
+    {
+      "id": 1,
+      "title": "Morning Run",
+      "startedOn": "2025-10-10T06:05:00.000000",
+      "completedOn": "2025-10-10T07:05:00.000000",
+      "kilometers": 5,
+      "location": "INDOOR"
+    },
+    {
+        "id": 2,
+        "title": "Evening Jog",
+        "startedOn": "2025-10-12T18:20:00.000000",
+        "completedOn": "2025-10-12T19:05:00.000000",
+        "kilometers": 6,
+        "location": "OUTDOOR"
+      },
+      {
+        "id": 3,
+        "title": "Lunchtime Sprint",
+        "startedOn": "2025-10-14T12:10:00.000000",
+        "completedOn": "2025-10-14T12:40:00.000000",
+        "kilometers": 4,
+        "location": "INDOOR"
+      },
+      {
+        "id": 4,
+        "title": "Sunrise Run",
+        "startedOn": "2025-10-16T05:50:00.000000",
+        "completedOn": "2025-10-16T06:45:00.000000",
+        "kilometers": 7,
+        "location": "OUTDOOR"
+      },
+      {
+        "id": 5,
+        "title": "After Work Run",
+        "startedOn": "2025-10-18T17:30:00.000000",
+        "completedOn": "2025-10-18T18:20:00.000000",
+        "kilometers": 5,
+        "location": "INDOOR"
+      },
+      {
+        "id": 6,
+        "title": "Weekend Long Run",
+        "startedOn": "2025-10-19T09:00:00.000000",
+        "completedOn": "2025-10-19T10:30:00.000000",
+        "kilometers": 10,
+        "location": "OUTDOOR"
+      },
+      {
+        "id": 7,
+        "title": "Night Run",
+        "startedOn": "2025-10-20T21:15:00.000000",
+        "completedOn": "2025-10-20T22:00:00.000000",
+        "kilometers": 5,
+        "location": "OUTDOOR"
+      },
+      {
+        "id": 8,
+        "title": "Quick Treadmill Run",
+        "startedOn": "2025-10-22T07:40:00.000000",
+        "completedOn": "2025-10-22T08:05:00.000000",
+        "kilometers": 3,
+        "location": "INDOOR"
+      },
+      {
+        "id": 9,
+        "title": "Afternoon Run",
+        "startedOn": "2025-10-23T15:10:00.000000",
+        "completedOn": "2025-10-23T15:55:00.000000",
+        "kilometers": 6,
+        "location": "OUTDOOR"
+      },
+      {
+        "id": 10,
+        "title": "Recovery Run",
+        "startedOn": "2025-10-25T08:30:00.000000",
+        "completedOn": "2025-10-25T09:00:00.000000",
+        "kilometers": 4,
+        "location": "INDOOR"
+      }
+  ]
+}
