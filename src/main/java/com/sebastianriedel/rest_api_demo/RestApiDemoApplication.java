@@ -3,12 +3,16 @@ package com.sebastianriedel.rest_api_demo;
 import com.sebastianriedel.rest_api_demo.run.Location;
 import com.sebastianriedel.rest_api_demo.run.Run;
 import com.sebastianriedel.rest_api_demo.run.RunRepository;
+import com.sebastianriedel.rest_api_demo.user.UserHttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestClient;
+import org.springframework.web.client.support.RestClientAdapter;
+import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -21,6 +25,13 @@ public class RestApiDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RestApiDemoApplication.class, args);
 	}
+
+    @Bean
+    UserHttpClient userHttpClient() {
+        RestClient restClient = RestClient.create("https://jsonplaceholder.typicode.com/");
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory.builderFor(RestClientAdapter.create(restClient)).build();
+        return factory.createClient(UserHttpClient.class);
+    }
 
 //    @Bean
 //    CommandLineRunner runner(RunRepository runRepository){
