@@ -1,24 +1,44 @@
 # Sebastian Riedel Portfolio
+# Java Spring Boot REST API Demo
 
-Welcome to my portfolio! Here you'll find some of the web projects I've built.
+This project is a backend-focused REST API built with Java Spring Boot to practice designing and implementing CRUD-based services, database integration and external API communication.
+
+The application manages jogging activities submitted by users and persists them in a PostgreSQL database running inside a Docker container. Additionally, user-related data is retrieved via an external REST API using Spring’s REST client.
 
 ---
 
-### Java Spring Boot REST API Demo
-**Description:**  
-This app is a simple Java Spring Boot REST API demo. It is a app that collects runs/jogging runs from users. The app manages common CRUD calls using a PostgresSQL Database via Docker. This app also uses the RESTClient for User management using an external API.
+## Project Goals
+- Design and implement a RESTful backend using Spring Boot  
+- Implement full CRUD operations for domain entities  
+- Integrate PostgreSQL using Docker for local development  
+- Consume external REST APIs for user management  
+- Structure a backend project following common Spring conventions  
 
+---
 
-**GitHub Repo:** [Link to repo](https://github.com/SebastianR0589/Java-rest-api-demo)
+## Features
+- REST API for managing jogging activities  
+- CRUD operations (Create, Read, Update, Delete)  
+- PostgreSQL database integration via Docker  
+- External API consumption for user-related data  
+- Layered architecture (Controller, Service, Repository)  
 
-**Screenshots:**
-![Screenshot 1](./screenshots/files.PNG)
-![Screenshot 2](./screenshots/controller.PNG)
-![Screenshot 3](./screenshots/repository.PNG)
+---
 
-**Features:**
-- Manage Backend Data
-- Manage CRUD commands
+## Tech Stack
+- Java Spring Boot  
+- Maven  
+- PostgreSQL  
+- Docker  
 
-**Tech Stack:**  
-Java Spring Boot, Maven, Docker
+---
+
+## Screenshots
+![Project Structure](./screenshots/files.PNG)
+![REST Controller](./screenshots/controller.PNG)
+![Repository Layer](./screenshots/repository.PNG)
+
+---
+
+## Repository
+GitHub Repository: [Link to repo](https://github.com/SebastianR0589/Java-rest-api-demo)
